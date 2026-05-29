@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MT MVP Locator | Ad Infinitum Guild</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html"><img src="assets/logo.gif" alt="Ad Infinitum Logo" class="header-logo"></a>
+    <nav class="main-nav">
+      <a href="index.html#about">About Us</a>
+      <div class="nav-dropdown">
+        <a href="instances.html">Instances</a>
+        <div class="submenu">
+          <a href="mt-mvp-locator.html">MT MVP Locator</a>
+        </div>
+      </div>
+      <a href="builds.html">Builds</a>
+      <a href="index.html#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section mt-locator-section">
+      <div class="section-heading">
+        <img src="assets/logo.gif" alt="Ad Infinitum Logo" class="mt-locator-logo">
+        <h2>Mystic Tower MVP Locator</h2>
+        <div class="divider"></div>
+        <p>Choose the clues from your run and the locator will place the expected MVPs and mobs into their matching quadrants.</p>
+      </div>
+
+      <div class="mt-tracker">
+        <div class="mt-controls" aria-label="Mystic Tower locator inputs">
+          <fieldset class="mt-fieldset">
+            <legend>Bijou Phantom Location?</legend>
+            <div class="mt-options two-column">
+              <label><input type="radio" name="bijou" value="0" checked> Top Left</label>
+              <label><input type="radio" name="bijou" value="1"> Top Right</label>
+              <label><input type="radio" name="bijou" value="3"> Bottom Left</label>
+              <label><input type="radio" name="bijou" value="2"> Bottom Right</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-fieldset">
+            <legend>Wave 2 Mob Locations?</legend>
+            <div class="mt-options">
+              <label><input type="radio" name="wave2" value="0" checked> Top Left / Bottom Right</label>
+              <label><input type="radio" name="wave2" value="1"> Top Right / Bottom Left</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-fieldset">
+            <legend>Crystal Broke During Waves 1 - 4?</legend>
+            <div class="mt-options compact">
+              <label><input type="radio" name="crystal" value="0" checked> No</label>
+              <label><input type="radio" name="crystal" value="2"> Yes</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-fieldset">
+            <legend>Where were the lights on stages 6 - 8?</legend>
+            <div class="mt-options">
+              <label><input type="radio" name="lights" value="2" checked> RRR / LRL / LLR / RLL</label>
+              <label><input type="radio" name="lights" value="0"> LLL / RLR / RRL / LRR</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-fieldset valkyrie-fieldset">
+            <legend>Which Valkyrie is in the center?</legend>
+            <div class="mt-options three-column valkyrie-options">
+              <label><input type="radio" name="valk" value="prima"> Prima</label>
+              <label><input type="radio" name="valk" value="reginleif" checked> Reginleif</label>
+              <label><input type="radio" name="valk" value="hildr"> Hildr</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="reginleif-result" id="Reginleif">
+          <span>Valkyrie Reginleif is in the center!</span>
+          <img src="assets/mt-mvp-locator/Reginleif.gif" alt="Valkyrie Reginleif">
+        </div>
+
+        <div class="mt-map-area">
+          <div class="mt-map-card">
+            <div class="mt-grid">
+              <div class="mt-cell" id="oTL" aria-label="Outer tower top left"></div>
+              <div class="mt-cell" id="oTR" aria-label="Outer tower top right"></div>
+              <div class="mt-cell" id="oBL" aria-label="Outer tower bottom left"></div>
+              <div class="mt-cell" id="oBR" aria-label="Outer tower bottom right"></div>
+            </div>
+          </div>
+
+          <div class="mt-map-card">
+            <div class="mt-grid">
+              <div class="mt-cell" id="aTL" aria-label="Ascendant tower top left"></div>
+              <div class="mt-cell" id="aTR" aria-label="Ascendant tower top right"></div>
+              <div class="mt-cell" id="aBL" aria-label="Ascendant tower bottom left"></div>
+              <div class="mt-cell" id="aBR" aria-label="Ascendant tower bottom right"></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-source-credit">Credits to Boney/ASC for creating this wonderful script</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.gif" alt="Ad Infinitum Logo" class="footer-logo">
+        <div>
+          <h2>Ad Infinitum</h2>
+          <p>Together Beyond Time, Together Beyond Trials</p>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html#about">About</a>
+        <a href="instances.html">Instances</a>
+        <a href="mt-mvp-locator.html">MT MVP Locator</a>
+        <a href="builds.html">Builds</a>
+        <a href="index.html#gallery">Gallery</a>
+      </nav>
+
+      <a href="https://discord.gg/MQvKzYFnny" class="btn primary footer-cta" target="_blank" rel="noopener noreferrer">JOIN US NOW</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Ad Infinitum Guild. Website created by Ja. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const assetPath = 'assets/mt-mvp-locator/';
+
+    const sprite = {
+      bijou: imageTag('Bijou.gif', 'Bijou Phantom'),
+      shroud: imageTag('Shroud.gif', 'Shroud'),
+      berserker: imageTag('Dark_Berserker.gif', 'Dark Berserker'),
+      assassin: imageTag('Assassin.gif', 'Assassin'),
+      orconio: imageTag('Orconio.gif', 'Orconio'),
+      fafnir: imageTag('Fafnir.gif', 'Fafnir'),
+      evil: imageTag('EVIL.gif', 'Evil'),
+      dreki: imageTag('Dreki.gif', 'Dreki'),
+      orpeo: imageTag('Orpeo.gif', 'Orpeo'),
+      reginleif: imageTag('Reginleif.gif', 'Valkyrie Reginleif')
+    };
+
+    function imageTag(file, alt) {
+      return `<img src="${assetPath}${file}" alt="${alt}" class="mt-sprite">`;
+    }
+
+    function clearMap() {
+      ['oTL', 'oTR', 'oBR', 'oBL', 'aTL', 'aTR', 'aBR', 'aBL'].forEach((id) => {
+        document.getElementById(id).innerHTML = '';
+      });
+    }
+
+    function reginleifLocation(input) {
+      if (input === 'prima') return 'to the left!';
+      if (input === 'hildr') return 'to the right!';
+      if (input === 'reginleif') return 'in the center!';
+      return '???';
+    }
+
+    function drawLocator() {
+      clearMap();
+
+      const outerOutput = ['oTL', 'oTR', 'oBR', 'oBL'];
+      const ascOutput = ['aTL', 'aTR', 'aBR', 'aBL'];
+      const evilOutput = ['aBR', 'aBL', 'aTL', 'aTR'];
+
+      const bijouLocation = Number(document.querySelector('input[name="bijou"]:checked').value) % 4;
+      const wave2Location = Number(document.querySelector('input[name="wave2"]:checked').value) % 4;
+      const wave2AltLocation = (wave2Location + 2) % 4;
+      const wave3Location = (wave2Location + 1) % 4;
+      const wave3AltLocation = (wave2Location + 3) % 4;
+      const crystalLocation = Number(document.querySelector('input[name="crystal"]:checked').value) % 4;
+      const lightsLocation = Number(document.querySelector('input[name="lights"]:checked').value) % 4;
+      const valkName = document.querySelector('input[name="valk"]:checked').value;
+      const drekiLocation = (bijouLocation + lightsLocation) % 4;
+      const evilLocation = (wave3Location % 2) + crystalLocation;
+      const fafnirLocation = (evilLocation + 2) % 4;
+
+      document.getElementById(outerOutput[bijouLocation]).innerHTML = sprite.bijou + sprite.shroud;
+      document.getElementById(outerOutput[wave2Location]).innerHTML += sprite.berserker;
+      document.getElementById(outerOutput[wave2AltLocation]).innerHTML += sprite.berserker;
+      document.getElementById(outerOutput[wave3Location]).innerHTML += sprite.assassin;
+      document.getElementById(outerOutput[wave3AltLocation]).innerHTML += sprite.assassin;
+      document.getElementById(ascOutput[drekiLocation]).innerHTML += sprite.dreki;
+      document.getElementById(ascOutput[wave2Location]).innerHTML += sprite.orconio;
+      document.getElementById(ascOutput[wave2AltLocation]).innerHTML += sprite.orpeo;
+      document.getElementById(evilOutput[evilLocation]).innerHTML += sprite.evil;
+      document.getElementById(evilOutput[fafnirLocation]).innerHTML += sprite.fafnir;
+
+      const result = document.getElementById('Reginleif');
+      result.className = `reginleif-result ${valkName}`;
+      result.innerHTML = `<span>Valkyrie Reginleif is ${reginleifLocation(valkName)}</span>${sprite.reginleif}`;
+    }
+
+    document.querySelectorAll('.mt-controls input[type="radio"]').forEach((input) => {
+      input.addEventListener('change', drawLocator);
+    });
+
+    drawLocator();
+  </script>
+</body>
+</html>
