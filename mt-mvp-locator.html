@@ -4,14 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MT MVP Locator | Ad Infinitum Guild</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a href="index.html"><img src="assets/logo.gif" alt="Ad Infinitum Logo" class="header-logo"></a>
+    <a href="index.html"><img src="assets/logo.gif" alt="Ad Infinitum Logo" class="header-logo" width="120" height="120" fetchpriority="high" decoding="async"></a>
     <nav class="main-nav">
       <a href="index.html#about">About Us</a>
       <a href="index.html#members">Core Members</a>
@@ -29,7 +26,7 @@
   <main>
     <section class="page-section mt-locator-section">
       <div class="section-heading">
-        <img src="assets/logo.gif" alt="Ad Infinitum Logo" class="mt-locator-logo">
+        <img src="assets/logo.gif" alt="Ad Infinitum Logo" class="mt-locator-logo" width="120" height="120" decoding="async">
         <h2>Mystic Tower MVP Locator</h2>
         <div class="divider"></div>
         <p>Choose the clues from your run and the locator will place the expected MVPs and mobs into their matching quadrants.</p>
@@ -83,7 +80,7 @@
 
         <div class="reginleif-result" id="Reginleif">
           <span>Valkyrie Reginleif is in the center!</span>
-          <img src="assets/mt-mvp-locator/Reginleif.gif" alt="Valkyrie Reginleif">
+          <img src="assets/mt-mvp-locator/Reginleif.gif" alt="Valkyrie Reginleif" loading="lazy" decoding="async">
         </div>
 
         <div class="mt-map-area">
@@ -114,7 +111,7 @@
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-brand">
-        <img src="assets/logo.gif" alt="Ad Infinitum Logo" class="footer-logo">
+        <img src="assets/logo.gif" alt="Ad Infinitum Logo" class="footer-logo" width="76" height="76" loading="lazy" decoding="async">
         <div>
           <h2>Ad Infinitum</h2>
           <p>Together Beyond Time, Together Beyond Trials</p>
@@ -155,7 +152,7 @@
     };
 
     function imageTag(file, alt) {
-      return `<img src="${assetPath}${file}" alt="${alt}" class="mt-sprite">`;
+      return `<img src="${assetPath}${file}" alt="${alt}" class="mt-sprite" loading="lazy" decoding="async">`;
     }
 
     function clearMap() {

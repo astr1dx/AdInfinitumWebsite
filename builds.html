@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Builds | Ad Infinitum Guild</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/hero-bg.jpg" as="image">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a href="index.html"><img src="assets/logo.gif" alt="Ad Infinitum Logo" class="header-logo"></a>
+    <a href="index.html"><img src="assets/logo.gif" alt="Ad Infinitum Logo" class="header-logo" width="120" height="120" fetchpriority="high" decoding="async"></a>
     <nav class="main-nav">
       <a href="index.html#about">About Us</a>
       <a href="index.html#members">Core Members</a>
@@ -49,7 +47,7 @@
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-brand">
-        <img src="assets/logo.gif" alt="Ad Infinitum Logo" class="footer-logo">
+        <img src="assets/logo.gif" alt="Ad Infinitum Logo" class="footer-logo" width="76" height="76" loading="lazy" decoding="async">
         <div>
           <h2>Ad Infinitum</h2>
           <p>Together Beyond Time, Together Beyond Trials</p>
